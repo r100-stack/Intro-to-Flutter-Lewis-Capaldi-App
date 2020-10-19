@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
   final String imageUrl =
@@ -67,6 +68,45 @@ class HomeScreen extends StatelessWidget {
           // TODO (9): IconButton.onPressed = method that prints "instagram pressed"
 
           // TODO (10): Create identical IconButtons for Twitter, Spotify, YouTube, Facebook, Apple
+
+          const SizedBox(
+            height: 20.0,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              IconButton(
+                icon: Icon(FontAwesomeIcons.instagram),
+                color: Colors.white,
+                onPressed: () => print('instagram pressed'),
+              ),
+              IconButton(
+                icon: Icon(FontAwesomeIcons.twitter),
+                color: Colors.white,
+                onPressed: () => print('twitter pressed'),
+              ),
+              IconButton(
+                icon: Icon(FontAwesomeIcons.spotify),
+                color: Colors.white,
+                onPressed: () => print('spotify pressed'),
+              ),
+              IconButton(
+                icon: Icon(FontAwesomeIcons.youtube),
+                color: Colors.white,
+                onPressed: () => print('youtube pressed'),
+              ),
+              IconButton(
+                icon: Icon(FontAwesomeIcons.facebook),
+                color: Colors.white,
+                onPressed: () => print('facebook pressed'),
+              ),
+              IconButton(
+                icon: Icon(FontAwesomeIcons.apple),
+                color: Colors.white,
+                onPressed: () => print('apple pressed'),
+              ),
+            ],
+          ),
         ],
       ),
     );
