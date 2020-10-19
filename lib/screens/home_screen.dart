@@ -46,6 +46,31 @@ class HomeScreen extends StatelessWidget {
           // fontSize: 20.0
           // fontWeight: FontWeight.w300
           // color: Colors.white
+
+          // TODO (6): Add a SizedBox of height 20.0 between the name and image
+
+          const SizedBox(
+            height: 20.0,
+          ),
+          Text(
+            'Lewis Capaldi',
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.w600,
+              color: Colors.white,
+            ),
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          Text(
+            'Singer-songwriter',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.w300,
+              color: Colors.white,
+            ),
+          ),
         ],
       ),
     );
