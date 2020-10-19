@@ -28,19 +28,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // TODO (7): Delete the reference to the old MyHomePage widget
-      // TODO (8): Assign the new HomeScreen widget to the home property
       home: HomeScreen(),
     );
   }
 }
-
-// TODO (2): Add a screens package under lib
-// TODO (3): Create a new file called home_screen.dart
-
-// Within home_screen.dart
-// TODO (4): Type stl to create a StatelessWidget
-// TODO (5): Name the widget HomeScreen
-// TODO (6): Import the material package to fix the errors
-
-// TODO (1): Delete the default HomePage
