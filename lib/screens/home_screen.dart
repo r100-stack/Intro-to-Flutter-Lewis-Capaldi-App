@@ -32,23 +32,6 @@ class HomeScreen extends StatelessWidget {
               image: NetworkImage(imageUrl),
             ),
           ),
-
-          // TODO (1): Add a Text() for the name
-          // TODO (2): Add a suitable TextStyle for it
-          // fontSize: 30.0
-          // fontWeight: FontWeight.w600
-          // color: Colors.white
-
-          // TODO (3): Add a SizedBox of height 5.0
-
-          // TODO (4): Add a Text() for the subtitle
-          // TODO (5): Add a suitable TextStyle for it
-          // fontSize: 20.0
-          // fontWeight: FontWeight.w300
-          // color: Colors.white
-
-          // TODO (6): Add a SizedBox of height 20.0 between the name and image
-
           const SizedBox(
             height: 20.0,
           ),
