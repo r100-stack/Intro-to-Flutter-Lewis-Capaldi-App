@@ -27,6 +27,8 @@ class HomeScreen extends StatelessWidget {
           // TODO (5): Use imageUrl as the image url for NetworkImage
           // TODO (6): Wrap the Image with ClipRRect
           // TODO (7): ClipRRect.borderRadius = BorderRadius.circular(20.0)
+
+          // TODO (8): Add a SizedBox of height 40.0 between the text and the image
         ],
       ),
     );
