@@ -55,20 +55,6 @@ class HomeScreen extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-
-          // TODO (3): Add a SizedBox of height 20.0
-
-          // TODO (4): Add a Row()
-          // TODO (5): Row.mainAxisAlignment = MainAxisAlignment.spaceEvenly
-
-          // Within Row.children
-          // TODO (6): Add an IconButton()
-          // TODO (7): IconButton.icon = Icon(FontAwesomeIcons.instagram)
-          // TODO (8): IconButton.color = Colors.white
-          // TODO (9): IconButton.onPressed = method that prints "instagram pressed"
-
-          // TODO (10): Create identical IconButtons for Twitter, Spotify, YouTube, Facebook, Apple
-
           const SizedBox(
             height: 20.0,
           ),
