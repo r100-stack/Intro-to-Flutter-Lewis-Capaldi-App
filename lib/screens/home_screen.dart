@@ -46,6 +46,8 @@ class HomeScreen extends StatelessWidget {
           // fontSize: 20.0
           // fontWeight: FontWeight.w300
           // color: Colors.white
+
+          // TODO (6): Add a SizedBox of height 20.0 between the name and image
         ],
       ),
     );
