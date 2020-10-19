@@ -26,8 +26,8 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // TODO (6): Delete the reference to the old MyHomePage widget
-      // TODO (7): Assign the new HomeScreen widget to the home property
+      // TODO (7): Delete the reference to the old MyHomePage widget
+      // TODO (8): Assign the new HomeScreen widget to the home property
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
 // Within home_screen.dart
 // TODO (4): Type stl to create a StatelessWidget
 // TODO (5): Name the widget HomeScreen
+// TODO (6): Import the material package to fix the errors
 
 // TODO (1): Delete the default HomePage
 class MyHomePage extends StatefulWidget {
