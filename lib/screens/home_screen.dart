@@ -107,6 +107,35 @@ class HomeScreen extends StatelessWidget {
           // TODO (9): Add a SizedBox of height 5.0
 
           // TODO (10): Add a similar FlatButton for Merch
+
+          const SizedBox(
+            height: 20.0,
+          ),
+          FlatButton(
+            minWidth: 125.0,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0)),
+            child: Text(
+              'Concerts',
+              style: TextStyle(color: Colors.white),
+            ),
+            onPressed: () => print('Concerts pressed'),
+            color: Colors.red,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          FlatButton(
+            minWidth: 125.0,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0)),
+            child: Text(
+              'Merch',
+              style: TextStyle(color: Colors.white),
+            ),
+            onPressed: () => print('Merch pressed'),
+            color: Colors.red,
+          ),
         ],
       ),
     );
