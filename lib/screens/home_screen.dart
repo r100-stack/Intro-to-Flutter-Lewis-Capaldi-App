@@ -9,10 +9,15 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+
+      // TODO (1): Wrap the Column within a SingleChildScrollView
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+
+          // TODO (5): Add a SizedBox of height 40.0
+
           Text(
             '"DIVINELY UNINSPIRED TO A HELLISH EXTENT"',
             textAlign: TextAlign.center,
