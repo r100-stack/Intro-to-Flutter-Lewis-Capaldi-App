@@ -11,12 +11,14 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.black,
 
       // TODO (1): Wrap the Column within a SingleChildScrollView
+      // TODO (5): Wrap the SingleChildScrollView with a SafeArea
+      // TODO (6): Wrap the SingleChildScrollView with a Center
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
 
-          // TODO (5): Add a SizedBox of height 40.0
+          // TODO (7): Add a SizedBox of height 40.0
 
           Text(
             '"DIVINELY UNINSPIRED TO A HELLISH EXTENT"',
