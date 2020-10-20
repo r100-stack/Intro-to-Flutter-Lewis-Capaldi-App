@@ -21,6 +21,7 @@ class HomeScreen extends StatelessWidget {
             children: [
 
               // TODO (7): Add a SizedBox of height 40.0
+              const SizedBox(height: 40.0,),
 
               Text(
                 '"DIVINELY UNINSPIRED TO A HELLISH EXTENT"',
