@@ -11,122 +11,128 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.black,
 
       // TODO (1): Wrap the Column within a SingleChildScrollView
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-
-          // TODO (5): Add a SizedBox of height 40.0
-
-          Text(
-            '"DIVINELY UNINSPIRED TO A HELLISH EXTENT"',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.w900,
-              color: Colors.white,
-            ),
-          ),
-          const SizedBox(
-            height: 40.0,
-          ),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(20.0),
-            child: Image(
-              height: 200.0,
-              width: 200.0,
-              image: NetworkImage(imageUrl),
-            ),
-          ),
-          const SizedBox(
-            height: 20.0,
-          ),
-          Text(
-            'Lewis Capaldi',
-            style: TextStyle(
-              fontSize: 30.0,
-              fontWeight: FontWeight.w600,
-              color: Colors.white,
-            ),
-          ),
-          const SizedBox(
-            height: 5.0,
-          ),
-          Text(
-            'Singer-songwriter',
-            style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.w300,
-              color: Colors.white,
-            ),
-          ),
-          const SizedBox(
-            height: 20.0,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      // TODO (5): Wrap the SingleChildScrollView with a SafeArea
+      // TODO (6): Wrap the SingleChildScrollView with a Center
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              IconButton(
-                icon: Icon(FontAwesomeIcons.instagram),
-                color: Colors.white,
-                onPressed: () => print('instagram pressed'),
+
+              // TODO (7): Add a SizedBox of height 40.0
+
+              Text(
+                '"DIVINELY UNINSPIRED TO A HELLISH EXTENT"',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white,
+                ),
               ),
-              IconButton(
-                icon: Icon(FontAwesomeIcons.twitter),
-                color: Colors.white,
-                onPressed: () => print('twitter pressed'),
+              const SizedBox(
+                height: 40.0,
               ),
-              IconButton(
-                icon: Icon(FontAwesomeIcons.spotify),
-                color: Colors.white,
-                onPressed: () => print('spotify pressed'),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(20.0),
+                child: Image(
+                  height: 200.0,
+                  width: 200.0,
+                  image: NetworkImage(imageUrl),
+                ),
               ),
-              IconButton(
-                icon: Icon(FontAwesomeIcons.youtube),
-                color: Colors.white,
-                onPressed: () => print('youtube pressed'),
+              const SizedBox(
+                height: 20.0,
               ),
-              IconButton(
-                icon: Icon(FontAwesomeIcons.facebook),
-                color: Colors.white,
-                onPressed: () => print('facebook pressed'),
+              Text(
+                'Lewis Capaldi',
+                style: TextStyle(
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                ),
               ),
-              IconButton(
-                icon: Icon(FontAwesomeIcons.apple),
-                color: Colors.white,
-                onPressed: () => print('apple pressed'),
+              const SizedBox(
+                height: 5.0,
+              ),
+              Text(
+                'Singer-songwriter',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.w300,
+                  color: Colors.white,
+                ),
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  IconButton(
+                    icon: Icon(FontAwesomeIcons.instagram),
+                    color: Colors.white,
+                    onPressed: () => print('instagram pressed'),
+                  ),
+                  IconButton(
+                    icon: Icon(FontAwesomeIcons.twitter),
+                    color: Colors.white,
+                    onPressed: () => print('twitter pressed'),
+                  ),
+                  IconButton(
+                    icon: Icon(FontAwesomeIcons.spotify),
+                    color: Colors.white,
+                    onPressed: () => print('spotify pressed'),
+                  ),
+                  IconButton(
+                    icon: Icon(FontAwesomeIcons.youtube),
+                    color: Colors.white,
+                    onPressed: () => print('youtube pressed'),
+                  ),
+                  IconButton(
+                    icon: Icon(FontAwesomeIcons.facebook),
+                    color: Colors.white,
+                    onPressed: () => print('facebook pressed'),
+                  ),
+                  IconButton(
+                    icon: Icon(FontAwesomeIcons.apple),
+                    color: Colors.white,
+                    onPressed: () => print('apple pressed'),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              FlatButton(
+                minWidth: 125.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0)),
+                child: Text(
+                  'Concerts',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () => print('Concerts pressed'),
+                color: Colors.red,
+              ),
+              const SizedBox(
+                height: 5.0,
+              ),
+              FlatButton(
+                minWidth: 125.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0)),
+                child: Text(
+                  'Merch',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () => print('Merch pressed'),
+                color: Colors.red,
               ),
             ],
           ),
-          const SizedBox(
-            height: 20.0,
-          ),
-          FlatButton(
-            minWidth: 125.0,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10.0)),
-            child: Text(
-              'Concerts',
-              style: TextStyle(color: Colors.white),
-            ),
-            onPressed: () => print('Concerts pressed'),
-            color: Colors.red,
-          ),
-          const SizedBox(
-            height: 5.0,
-          ),
-          FlatButton(
-            minWidth: 125.0,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10.0)),
-            child: Text(
-              'Merch',
-              style: TextStyle(color: Colors.white),
-            ),
-            onPressed: () => print('Merch pressed'),
-            color: Colors.red,
-          ),
-        ],
+        ),
       ),
     );
   }

@@ -31,6 +31,9 @@ class MyApp extends StatelessWidget {
         // TODO (2): primaryColor: Colors.black
         // TODO (3): primaryColorDark: Colors.black
         // TODO (4): accentColor: Colors.red
+        primaryColor: Colors.black,
+        primaryColorDark: Colors.black,
+        accentColor: Colors.red
       ),
       home: HomeScreen(),
     );
